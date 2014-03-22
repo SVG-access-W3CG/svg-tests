@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%" height="100%" viewBox="0 0 400 400">
+
+  <title>Circle</title>
+
+  <circle id="circle_1" cx="75" cy="25" r="20" fill="orange" stroke="red" />
+  
+  <circle id="circle_2" cx="75" cy="525" r="20" fill="red" stroke="red" />
+  
+  
+</svg>

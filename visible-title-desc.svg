@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%" height="100%" viewBox="0 0 400 400">
+
+  <title>Visible Titles and Descriptions</title>
+  <desc>Alternate description</desc>
+  
+  <style type="text/css"><![CDATA[
+    /* svg   { visibility: hidden !important  } */
+    title  { 
+      visibility: visible !important;
+      display: inline-block !important;
+      position: absolute !important;
+      top: 20px !important;
+      left: 20px !important;
+      color: black !important;
+       }
+    desc  { 
+      visibility: visible !important;
+      display: inline-block !important;
+      position: absolute !important;
+      top: 20px !important;
+      left: 20px !important;
+      color: black !important;
+       }
+    g     { display: block !important }
+    svg > title { 
+      font-size: 120% !important;
+      font-weight: bolder !important
+    }
+
+  ]]></style>
+  
+  
+  
+  <circle id="circle_1" cx="75" cy="125" r="20" fill="orange" stroke="red">
+    <title>Circle</title>
+    <desc>This is an orange circle with a red stroke.</desc>
+    
+  </circle>
+  
+  
+</svg>

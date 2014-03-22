@@ -1,0 +1,29 @@
+* navigation
+* focus
+** focus ring 
+** visible focus
+* title elements
+* desc elements
+* inline SVG
+* standalone SVG
+* SVG by reference
+** img
+** object / embed
+** iframe
+** CSS background
+* text elements
+** text
+** tspan
+** textPath
+* interaction
+** hover?
+** event-targets (click)
+** link
+** scripted (drag-n-drop)
+* animation
+* aria
+
+* navigation mechanisms
+** keyboard
+** mouse
+** touch

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Basic inline SVG title test</title>
+	<style type="text/css"><![CDATA[
+	   svg-container {
+	     outline: gray solid 1px;
+	     width: 200px;
+	     height: 200px;
+	   }
+
+	]]></style>
+	
+</head>
+<body>
+  <h1>Basic inline SVG title test</h1>
+  <p>Pass criteria:</p>
+  <dl>
+    <dt>Inline SVG root-element 'title' element (non-visible metadata)</dt>
+    <dd><b>Navigation:</b> UA can navigate to root element 'title' element</dd>
+    <dd><b>Focus indicator:</b> UA draws a focus indicator around the entire SVG element</dd>
+    <dd><b>Voicing:</b> UA reads the text of the  root element 'title' element <i>("This in an inline SVG file")</i></dd>
+
+    <dt>Inline SVG child element 'title' element (non-visible metadata)</dt>
+    <dd><b>Navigation:</b> UA can navigate to 'title' element child of 'rect' element</dd>
+    <dd><b>Focus indicator:</b> UA draws a focus indicator around the 'rect' element</dd>
+    <dd><b>Voicing:</b> UA reads the text of the 'title' element child of 'rect' element <i>("This in a rect element")</i></dd>
+
+  </ul>
+  <div id="svg-container">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         width="100%" height="100%" viewBox="0 0 100 100">
+
+      <title>This in an inline SVG file</title>
+
+      <rect id="rect_1" x="5" y="5" width="40" height="40" fill="orange" stroke="blue">
+        <title>This in a rect element</title>
+      </rect>      
+    </svg>
+  </div>
+  
+</body>
+</html>

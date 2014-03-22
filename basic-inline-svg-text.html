@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Basic inline SVG test</title>
+</head>
+<body>
+  <h1>Basic inline SVG test</h1>
+  <p>Pass criteria:</p>
+  <dl>
+    <dt>Inline SVG root-element 'title' element (non-visible metadata)</dt>
+    <dd><b>Navigation:</b> UA can navigate to root element 'title' element</dd>
+    <dd><b>Voicing:</b> UA reads the text of the  root element 'title' element ("This in an inline SVG file")</dd>
+  </ul>
+  <svg xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       width="100%" height="100%" viewBox="0 0 400 400">
+
+    <title>This in an inline SVG file</title>
+    
+    <rect id="rect_1" x="5" y="55" width="40" height="40" fill="orange" stroke="blue">
+      <title>This in a rect element</title>
+    </rect> 
+    
+    <text id="text_1" x="10" y="25" font-size="18" fill="crimson"></text>
+     
+  </svg>
+  
+</body>
+</html>

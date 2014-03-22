@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SVG Link Test</title>
+</head>
+<body>
+  <h1>SVG Link Test</h1>
+  
+  <svg xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       width="100%" height="100%" viewBox="0 0 600 800">
+
+    <title>Links Test</title>
+    
+    <g id="links_without_titles">
+      <a xlink:href="circles.svg">
+        <text id="text_1" x="50" y="25" font-size="18" fill="crimson">This is a link to some circles.
+          <tspan x="50" dy="1em">The hexagon below links to a specific circle element.</tspan>
+        </text>
+        <circle id="circle_1" cx="25" cy="25" r="20" fill="orange" stroke="red" />
+      </a>
+
+      <a xlink:href="circles.svg#circle_2"><polygon id="polygon_1" points="72.75,100 100.25,100 112.75,122.75 100.25,145.5 72.75,145.5 60.25,122.75" stroke="violet" fill="purple" /></a>
+    </g>
+    
+    
+    <g id="links_with_titles" transform="translate(0,200)">
+      <a xlink:href="circles.svg">
+        <text id="text_1" x="50" y="25" font-size="18" fill="crimson">This is a link to some circles.
+          <tspan x="50" dy="1em">The hexagon below links to a specific circle element.</tspan>
+        </text>
+        <circle id="circle_1" cx="25" cy="25" r="20" fill="orange" stroke="red" />
+      </a>
+
+      <a xlink:href="circles.svg#circle_2">
+        <title>Link to Circles</title>
+        <polygon id="polygon_1" points="72.75,100 100.25,100 112.75,122.75 100.25,145.5 72.75,145.5 60.25,122.75" stroke="violet" fill="purple" />
+      </a>
+
+      <a xlink:href="circles.svg">
+        <title>Another link to Circles, with a title element</title>
+        <text id="text_1" x="50" y="225" font-size="18" fill="crimson">This is another link to some circles,
+          <tspan x="50" dy="1em">this time to a specific circle element.</tspan>
+        </text>
+        <circle id="circle_1" cx="25" cy="225" r="20" fill="orange" stroke="red" />
+      </a>
+
+      <a xlink:href="circles.svg" xlink:title="A 3rd link to Circles, with a title attribute in the XLink namespace">
+        <text id="text_1" x="60" y="325" font-size="18" fill="crimson">This is a third link to some circles.</text>
+        <rect id="rect_1" x="5" y="300" width="40" height="40" fill="orange" stroke="blue" />
+      </a>
+
+      <a xlink:href="circles.svg" title="A 4th link to Circles, with a non-standard title attribute in the null namespace">
+        <text id="text_1" x="60" y="425" font-size="18" fill="crimson">This is a fourth link to some circles.</text>
+        <rect id="rect_1" x="5" y="400" width="40" height="40" fill="orange" stroke="blue" />
+      </a>
+    </g>
+    
+    
+    
+    
+  </svg>
+  
+  
+  
+  
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+
+  </svg>
+  
+</body>
+</html>
